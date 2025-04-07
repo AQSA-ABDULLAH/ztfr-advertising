@@ -35,6 +35,15 @@
       transform: translateY(0%);
     }
   }
+/* REMOVE if using Tailwind only */
+.scroll-track:hover .image-item {
+  opacity: 0.25;
+}
+.scroll-track:hover .image-item:hover {
+  opacity: 1;
+}
+
+
   
   
   
