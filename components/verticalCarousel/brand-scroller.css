@@ -1,10 +1,4 @@
-.brand-scroller-wrapper {
-    display: flex;
-    gap: 20px;
-    height: 946px;
-  }
 
-  
   .scroll-track {
     position: absolute;
     width: 100%;
@@ -25,22 +19,23 @@
   }
   
   @keyframes scroll-up {
-    from {
+    0% {
       transform: translateY(0%);
     }
-    to {
-      transform: translateY(-100%);
+    100% {
+      transform: translateY(-50%);
     }
   }
   
   @keyframes scroll-down {
-    from {
-      transform: translateY(-100%);
+    0% {
+      transform: translateY(-42%);
     }
-    to {
+    100% {
       transform: translateY(0%);
     }
   }
+  
   
   
   

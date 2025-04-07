@@ -4,7 +4,7 @@ import data from "../data/brandColumns.json"; // update path as per your file lo
 const BrandScroller = ({ brands, animationClass }) => (
   <div className="relative overflow-hidden h-[100vh] w-[150px] 2xl:w-[200px]">
     <div className={`scroll-track ${animationClass}`}>
-      {brands.map((brand, idx) => (
+      {[...brands, ...brands].map((brand, idx) => (
         <div key={`brand-${idx}`} className="brand-image">
           <img
             src={brand.src}
@@ -26,7 +26,7 @@ const VerticalCarousel = () => {
     brandsColumn5,
     brandsColumn6,
     brandsColumn7,
-    brandsColumn8
+    brandsColumn8,
   } = data;
 
   return (
@@ -44,4 +44,3 @@ const VerticalCarousel = () => {
 };
 
 export default VerticalCarousel;
-
