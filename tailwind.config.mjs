@@ -1,3 +1,5 @@
+// tailwind.config.ts
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,9 +9,26 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        style: ["Microsoft Sans Serif", "sans-serif"],
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "3xl": "1900px",
+        "4xl": "2500px",
+      },
+      animation: {
+        marquee: "marquee 60s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
     },
   },
