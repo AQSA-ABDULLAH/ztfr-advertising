@@ -1,56 +1,183 @@
-import './brand-scroller.css';
+import "./brand-scroller.css";
 
 const brandsColumn1 = [
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FSamsung%20Galaxy%20Z%20Fold%201.png?alt=media&token=b2820d7b-ed16-4120-83e1-d52ee28ae23c" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20ASUS%20Zenbook%2014%20OLED%20(UM3406)%20%23AMD%20_%202024.png?alt=media&token=898f064c-17eb-4ef0-9a35-efe89dbf4f48" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FPaper%20Football%20With%20Patrick%20Mahomes%20%20%20adidas.png?alt=media&token=c3315a52-1169-4a14-9b72-0c3fea8f0655" },
+  {
+    src: "/assets/images/1.1.png",
+  },
+  {
+    src: "/assets/images/1.2.png",
+  },
+  {
+    src: "/assets/images/1.3.png",
+  },
+  {
+    src: "/assets/images/1.4.png",
+  },
+  {
+    src: "/assets/images/1.5.png",
+  },
+  {
+    src: "/assets/images/1.6.png",
+  },
 ];
 
 const brandsColumn2 = [
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FSamsung%20Galaxy%20Z%20Fold%201.png?alt=media&token=b2820d7b-ed16-4120-83e1-d52ee28ae23c" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20ASUS%20Zenbook%2014%20OLED%20(UM3406)%20%23AMD%20_%202024.png?alt=media&token=898f064c-17eb-4ef0-9a35-efe89dbf4f48" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FPaper%20Football%20With%20Patrick%20Mahomes%20%20%20adidas.png?alt=media&token=c3315a52-1169-4a14-9b72-0c3fea8f0655" },
+  {
+    src: "/assets/images/2.1.png",
+  },
+  {
+    src: "/assets/images/2.2.png",
+  },
+  {
+    src: "/assets/images/2.3.png",
+  },
+  {
+    src: "/assets/images/2.4.png",
+  },
+  {
+    src: "/assets/images/2.5.png",
+  },
+  {
+    src: "/assets/images/2.6.png",
+  },
 ];
 
 const brandsColumn3 = [
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advert-images%2FDiet%20Coke%20-%20ZP%20KM%201.jpg?alt=media&token=94d4b28d-193b-4d2c-9a17-d1ff9f434517" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20ASUS%20Zenbook%2014%20OLED%20(UM3406)%20%23AMD%20_%202024.png?alt=media&token=898f064c-17eb-4ef0-9a35-efe89dbf4f48" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FPaper%20Football%20With%20Patrick%20Mahomes%20%20%20adidas.png?alt=media&token=c3315a52-1169-4a14-9b72-0c3fea8f0655" },
+  {
+    src: "/assets/images/3.1.png",
+  },
+  {
+    src: "/assets/images/3.2.png",
+  },
+  {
+    src: "/assets/images/3.3.png",
+  },
+  {
+    src: "/assets/images/3.4.png",
+  },
+  {
+    src: "/assets/images/3.5.png",
+  },
+  {
+    src: "/assets/images/3.6.png",
+  },
 ];
 
 const brandsColumn4 = [
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FSamsung%20Galaxy%20Z%20Fold%201.png?alt=media&token=b2820d7b-ed16-4120-83e1-d52ee28ae23c" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20ASUS%20Zenbook%2014%20OLED%20(UM3406)%20%23AMD%20_%202024.png?alt=media&token=898f064c-17eb-4ef0-9a35-efe89dbf4f48" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FPaper%20Football%20With%20Patrick%20Mahomes%20%20%20adidas.png?alt=media&token=c3315a52-1169-4a14-9b72-0c3fea8f0655" },
+  {
+    src: "/assets/images/4.1.png",
+  },
+  {
+    src: "/assets/images/4.2.png",
+  },
+  {
+    src: "/assets/images/4.3.png",
+  },
+  {
+    src: "/assets/images/4.4.png",
+  },
+  {
+    src: "/assets/images/4.5.png",
+  },
+  {
+    src: "/assets/images/4.6.png",
+  },
 ];
 
 const brandsColumn5 = [
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FSamsung%20Galaxy%20Z%20Fold%201.png?alt=media&token=b2820d7b-ed16-4120-83e1-d52ee28ae23c" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20ASUS%20Zenbook%2014%20OLED%20(UM3406)%20%23AMD%20_%202024.png?alt=media&token=898f064c-17eb-4ef0-9a35-efe89dbf4f48" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FPaper%20Football%20With%20Patrick%20Mahomes%20%20%20adidas.png?alt=media&token=c3315a52-1169-4a14-9b72-0c3fea8f0655" },
+  {
+    src: "/assets/images/5.1.png",
+  },
+  {
+    src: "/assets/images/5.2.png",
+  },
+  {
+    src: "/assets/images/5.3.png",
+  },
+  {
+    src: "/assets/images/5.4.png",
+  },
+  {
+    src: "/assets/images/5.5.png",
+  },
+  {
+    src: "/assets/images/5.6.png",
+  },
 ];
 
 const brandsColumn6 = [
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FSamsung%20Galaxy%20Z%20Fold%201.png?alt=media&token=b2820d7b-ed16-4120-83e1-d52ee28ae23c" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20ASUS%20Zenbook%2014%20OLED%20(UM3406)%20%23AMD%20_%202024.png?alt=media&token=898f064c-17eb-4ef0-9a35-efe89dbf4f48" },
-  { src: "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FPaper%20Football%20With%20Patrick%20Mahomes%20%20%20adidas.png?alt=media&token=c3315a52-1169-4a14-9b72-0c3fea8f0655" },
+  {
+    src: "/assets/images/6.1.png",
+  },
+  {
+    src: "/assets/images/6.2.png",
+  },
+  {
+    src: "/assets/images/6.3.png",
+  },
+  {
+    src: "/assets/images/6.4.png",
+  },
+  {
+    src: "/assets/images/6.5.png",
+  },
+  {
+    src: "/assets/images/6.6.png",
+  },
 ];
 
+const brandsColumn7 = [
+  {
+    src: "/assets/images/7.1.png",
+  },
+  {
+    src: "/assets/images/7.2.png",
+  },
+  {
+    src: "/assets/images/7.3.png",
+  },
+  {
+    src: "/assets/images/7.4.png",
+  },
+  {
+    src: "/assets/images/7.5.png",
+  },
+  {
+    src: "/assets/images/7.6.png",
+  },
+];
+
+const brandsColumn8 = [
+  {
+    src: "/assets/images/8.1.png",
+  },
+  {
+    src: "/assets/images/8.2.png",
+  },
+  {
+    src: "/assets/images/8.3.png",
+  },
+  {
+    src: "/assets/images/8.4.png",
+  },
+  {
+    src: "/assets/images/8.5.png",
+  },
+  {
+    src: "/assets/images/8.6.png",
+  },
+];
 
 const BrandScroller = ({ brands, animationClass }) => (
-  <div className="brand-scroller">
-    <div className={`scroll-track ${animationClass}`}>
-      {brands.map((brand, idx) => (
-        <div key={idx} className="brand-image">
-          <img src={brand.src} alt={`brand-${idx}`} />
-        </div>
-      ))}
-    </div>
-    {/* Duplicate for seamless infinite scroll */}
+  <div className="relative overflow-hidden h-[100%] w-[150px] 2xl:w-[200px]">
     <div className={`scroll-track ${animationClass}`}>
       {brands.map((brand, idx) => (
         <div key={`dup-${idx}`} className="brand-image">
-          <img src={brand.src} alt={`brand-${idx}`} />
+          <img
+            src={brand.src}
+            alt={`brand-${idx}`}
+            className="rounded-[12px] my-[12px] cursor-pointer transition-all duration-300"
+          />
         </div>
       ))}
     </div>
@@ -65,9 +192,9 @@ const VerticalCarousel = () => (
     <BrandScroller brands={brandsColumn4} animationClass="scroll-down" />
     <BrandScroller brands={brandsColumn5} animationClass="scroll-up" />
     <BrandScroller brands={brandsColumn6} animationClass="scroll-down" />
+    <BrandScroller brands={brandsColumn7} animationClass="scroll-up" />
+    <BrandScroller brands={brandsColumn8} animationClass="scroll-down" />
   </div>
 );
 
 export default VerticalCarousel;
-
-
