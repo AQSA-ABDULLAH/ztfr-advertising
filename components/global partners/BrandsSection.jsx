@@ -1,4 +1,4 @@
-import brandLogos from '../path/to/brand-logo.json';
+import brandLogos from '../data/brand-logo.json';
 
 export default function BrandsSection() {
   return (
