@@ -1,13 +1,13 @@
-
-  .scroll-track {
+.scroll-track {
     position: absolute;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation-duration: 15s;
+    animation-duration: 20s; /* longer duration = smoother scroll */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    will-change: transform;
   }
   
   .scroll-up {
@@ -29,12 +29,13 @@
   
   @keyframes scroll-down {
     0% {
-      transform: translateY(-42%);
+      transform: translateY(-50%);
     }
     100% {
       transform: translateY(0%);
     }
   }
+  
   
   
   
