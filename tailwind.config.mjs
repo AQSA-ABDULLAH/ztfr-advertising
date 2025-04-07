@@ -1,5 +1,3 @@
-// tailwind.config.ts
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -21,14 +19,19 @@ export default {
         "3xl": "1900px",
         "4xl": "2500px",
       },
-      animation: {
-        marquee: "marquee 60s linear infinite",
-      },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        scroll: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-66.666%)" }, // Adjusted to loop smoothly
+        },
+      },
+      animation: {
+        marquee: "marquee 60s linear infinite",
+        scroll: "scroll 15s linear infinite",
       },
     },
   },
