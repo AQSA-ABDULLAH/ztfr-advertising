@@ -35,17 +35,24 @@
       transform: translateY(0%);
     }
   }
-/* REMOVE if using Tailwind only */
-.scroll-track:hover .image-item {
-  opacity: 0.25;
-}
-.scroll-track:hover .image-item:hover {
-  opacity: 1;
-}
 
 .paused {
   animation-play-state: paused !important;
 }
+
+
+/* When *any* image is hovered, reduce opacity of all */
+.image-item:hover {
+  opacity: 1;
+}
+
+/* When any image is hovered, make others dim */
+.image-item:hover ~ .image-item,
+.image-item:has(~ .image-item:hover),
+.image-item:not(:hover):not(:has(~ .image-item:hover)) {
+  opacity: 0.25;
+}
+
 
 
 
