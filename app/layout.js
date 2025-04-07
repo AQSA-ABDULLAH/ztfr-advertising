@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { metadata } from "./rootMetadata"; // Import metadata from the separate file
+import { metadata } from "./rootMetadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
