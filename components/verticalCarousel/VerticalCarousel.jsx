@@ -169,7 +169,7 @@ const brandsColumn8 = [
 ];
 
 const BrandScroller = ({ brands, animationClass }) => (
-  <div className="relative overflow-hidden h-[100%] w-[150px] 2xl:w-[200px]">
+  <div className="relative overflow-hidden h-[100vh] w-[150px] 2xl:w-[200px]">
     <div className={`scroll-track ${animationClass}`}>
       {brands.map((brand, idx) => (
         <div key={`dup-${idx}`} className="brand-image">
@@ -185,7 +185,7 @@ const BrandScroller = ({ brands, animationClass }) => (
 );
 
 const VerticalCarousel = () => (
-  <div className="brand-scroller-wrapper">
+  <div className="flex gap-[16px] justify-around ">
     <BrandScroller brands={brandsColumn1} animationClass="scroll-up" />
     <BrandScroller brands={brandsColumn2} animationClass="scroll-down" />
     <BrandScroller brands={brandsColumn3} animationClass="scroll-up" />
