@@ -41,7 +41,7 @@
 }
 
 
-/* When *any* image is hovered, reduce opacity of all */
+/* hovered image */
 .image-item:hover {
   opacity: 1;
 }
