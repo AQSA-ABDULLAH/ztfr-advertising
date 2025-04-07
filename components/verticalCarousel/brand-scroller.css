@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation-duration: 20s; /* longer duration = smoother scroll */
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     will-change: transform;
