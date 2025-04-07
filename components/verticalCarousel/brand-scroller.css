@@ -41,18 +41,6 @@
 }
 
 
-/* hovered image */
-.image-item:hover {
-  opacity: 1;
-}
-
-/* When any image is hovered, make others dim */
-.image-item:hover ~ .image-item,
-.image-item:has(~ .image-item:hover),
-.image-item:not(:hover):not(:has(~ .image-item:hover)) {
-  opacity: 0.25;
-}
-
 
 
 

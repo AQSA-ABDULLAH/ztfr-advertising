@@ -19,7 +19,7 @@ const BrandScroller = ({ brands, animationClass }) => {
             <img
               src={brand.src}
               alt={`brand-${idx}`}
-              className="image-item rounded-[12px] my-[12px] cursor-pointer transition-all duration-300"
+              className="image-item rounded-[12px] my-[12px] cursor-pointer transition-all duration-300 group-hover:opacity-25 hover:!opacity-100"
             />
           </div>
         ))}
@@ -27,6 +27,7 @@ const BrandScroller = ({ brands, animationClass }) => {
     </div>
   );
 };
+
 
 const VerticalCarousel = () => {
   const {
@@ -41,7 +42,7 @@ const VerticalCarousel = () => {
   } = data;
 
   return (
-    <div className="flex gap-[16px] justify-around w-screen 2xl:border-y border-white 2xl:overflow-hidden 2xl:h-[946px]">
+    <div className="flex gap-[16px] justify-around group hover-effect-group w-screen 2xl:border-y border-white 2xl:overflow-hidden 2xl:h-[946px]">
       <BrandScroller brands={brandsColumn1} animationClass="scroll-up" />
       <BrandScroller brands={brandsColumn2} animationClass="scroll-down" />
       <BrandScroller brands={brandsColumn3} animationClass="scroll-up" />
