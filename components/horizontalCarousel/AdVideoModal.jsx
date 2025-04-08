@@ -3,7 +3,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 
-const AdVideoModal = ({ onClose }) => {
+const AdVideoModal = ({ videoSrc, onClose }) => {
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
 
@@ -13,15 +13,13 @@ const AdVideoModal = ({ onClose }) => {
     }
   }, [isMuted]);
 
-  const toggleMute = () => {
-    setIsMuted((prev) => !prev);
-  };
+  const toggleMute = () => setIsMuted((prev) => !prev);
 
   return (
     <div className="fixed bottom-24 lg:bottom-[unset] top-[unset] lg:top-1/2 lg:-translate-y-1/2 left-1/2 -translate-x-1/2 z-40 w-full lg:w-[800px] 3xl:w-[1196px] h-auto rounded-2xl overflow-hidden opacity-100">
       <video
         ref={videoRef}
-        src="https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FHey%20Jude%20%20%20adidas.mp4?alt=media&token=831e2020-b7bd-49cd-b6fb-35bf91133bff"
+        src={videoSrc}
         autoPlay
         loop
         muted={isMuted}
@@ -77,4 +75,5 @@ const AdVideoModal = ({ onClose }) => {
 };
 
 export default AdVideoModal;
+
 

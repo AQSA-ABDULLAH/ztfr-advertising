@@ -10,7 +10,7 @@ const MarqueeRow = ({ direction = "left", onVideoClick }) => {
         <div
           key={index}
           className="relative mx-2"
-          onClick={onVideoClick} // 👈 show modal on click
+          onClick={() => onVideoClick(video)} // 👈 Pass specific video
         >
           <video
             className="w-[284px] h-[160px] lg:w-[355px] lg:h-[200px] 3xl:h-[358px] 3xl:w-[636px] object-cover rounded-2xl transition-all duration-300 cursor-pointer"
@@ -34,3 +34,4 @@ const MarqueeRow = ({ direction = "left", onVideoClick }) => {
 };
 
 export default MarqueeRow;
+
