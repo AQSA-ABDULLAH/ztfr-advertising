@@ -19,8 +19,8 @@ const MarqueeRow = ({
           <div
             key={index}
             className={`relative mx-2 ${
-                isSomeHovered ? (isHovered ? "opacity-100" : "opacity-25") : "opacity-100"
-              } `}
+              isSomeHovered ? (isHovered ? "opacity-100" : "opacity-25") : "opacity-100"
+            } `}
             onClick={() => onVideoClick(video)}
             onMouseEnter={() => setHoveredVideoIndex(index)}
             onMouseLeave={() => setHoveredVideoIndex(null)}
@@ -32,6 +32,7 @@ const MarqueeRow = ({
               loop
               muted
               playsInline
+              preload="auto" // Preload the video
             />
             <Image
               src="/assets/advertising/Model Card - Advertising White.png"
@@ -48,5 +49,6 @@ const MarqueeRow = ({
 };
 
 export default MarqueeRow;
+
 
 
