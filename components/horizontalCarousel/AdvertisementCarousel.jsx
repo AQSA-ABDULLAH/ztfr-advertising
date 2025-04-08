@@ -7,7 +7,7 @@ import videoData from "../data/videos"; // assuming default export
 
 function AdvertisementCarousel() {
   const [selectedVideo, setSelectedVideo] = useState(null);
-  const [hoveredVideoIndex, setHoveredVideoIndex] = useState(null);
+  const [hoveredVideo, setHoveredVideo] = useState(null); // Change to store the video object
 
   const { row1, row2, row3 } = videoData;
 
@@ -41,8 +41,8 @@ function AdvertisementCarousel() {
           direction={index % 2 === 0 ? "left" : "right"}
           rows={row} // Pass the row as 'rows'
           onVideoClick={(video) => setSelectedVideo(video)}
-          hoveredVideoIndex={hoveredVideoIndex}
-          setHoveredVideoIndex={setHoveredVideoIndex}
+          hoveredVideo={hoveredVideo} // Pass the hovered video
+          setHoveredVideo={setHoveredVideo} // Pass the setHoveredVideo function
         />
       ))}
     </section>
@@ -50,3 +50,4 @@ function AdvertisementCarousel() {
 }
 
 export default AdvertisementCarousel;
+
