@@ -10,7 +10,7 @@ const MarqueeRow = ({
   setHoveredVideoIndex,
 }) => {
   return (
-    <Marquee speed={30} gradient={false} pauseOnHover direction={direction}>
+    <Marquee speed={50} gradient={false} pauseOnHover direction={direction}>
       {videos.map((video, index) => {
         const isHovered = hoveredVideoIndex === index;
         const isSomeHovered = hoveredVideoIndex !== null;
