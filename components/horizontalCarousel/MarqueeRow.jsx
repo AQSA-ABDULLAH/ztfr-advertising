@@ -4,36 +4,37 @@ import Image from "next/image";
 
 const MarqueeRow = ({
   direction = "left",
-  rows, // Use the rows prop here
+  rows,
   onVideoClick,
-  hoveredVideo, // Use the hovered video object
-  setHoveredVideo, // Use the function to set hovered video
+  hoveredVideo,
+  setHoveredVideo,
 }) => {
   return (
     <Marquee speed={50} gradient={false} pauseOnHover direction={direction}>
       {rows.map((video, index) => {
-        // Check if the current video is hovered
         const isHovered = hoveredVideo === video;
-
-        // If no video is hovered, set opacity to 100 for all videos
-        const videoOpacity = hoveredVideo ? (isHovered ? "opacity-100" : "opacity-25") : "opacity-100";
+        const videoOpacity = hoveredVideo
+          ? isHovered
+            ? "opacity-100"
+            : "opacity-25"
+          : "opacity-100";
 
         return (
           <div
             key={index}
-            className={`relative mx-2 ${videoOpacity}`} // Apply opacity based on hover state
+            className={`relative mx-2 ${videoOpacity} flex items-center`} // Use flex for layout
             onClick={() => onVideoClick(video)}
-            onMouseEnter={() => setHoveredVideo(video)} // Set the hovered video when mouse enters
-            onMouseLeave={() => setHoveredVideo(null)} // Reset the hovered video when mouse leaves
+            onMouseEnter={() => setHoveredVideo(video)}
+            onMouseLeave={() => setHoveredVideo(null)}
           >
             <video
-              className={`w-[284px] h-[160px] lg:w-[355px] lg:h-[200px] 3xl:h-[358px] 3xl:w-[636px] object-cover rounded-2xl transition-all duration-300 cursor-pointer `}
+              className={`w-[284px] h-[160px] lg:w-[355px] lg:h-[200px] 3xl:h-[358px] 3xl:w-[636px] object-cover rounded-2xl transition-all duration-300 cursor-pointer outline-none focus:outline-none`} // Ensure no outline or margin on click
               poster={video.poster}
               src={video.videoSrc}
               loop
               muted
               playsInline
-              preload="auto" // Preload the video
+              preload="auto"
             />
             <Image
               src="/assets/advertising/Model Card - Advertising White.png"
@@ -50,5 +51,6 @@ const MarqueeRow = ({
 };
 
 export default MarqueeRow;
+
 
 

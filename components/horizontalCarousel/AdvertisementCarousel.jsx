@@ -26,7 +26,7 @@ function AdvertisementCarousel() {
   }, []);
 
   return (
-    <section className="w-full overflow-hidden py-4 space-y-4">
+    <section className="w-full overflow-hidden py-4 flex flex-col gap-4">
       {selectedVideo && (
         <AdVideoModal
           videoSrc={selectedVideo.videoSrc}
