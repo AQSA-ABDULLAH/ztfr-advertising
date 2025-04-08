@@ -1,11 +1,11 @@
 const videos = {
   row1: [
-  {
-    videoSrc:
-      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/mobileVideo%2FZG%20-%20Galaxy%20Z%20Fold5%20l%20Z%20Flip5%20Official%20Introduction%20Film%20Samsung%20JP%20X600.mp4?alt=media&token=fed9fa82-28fa-45b6-9323",
-    poster:
-      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FSamsung%20Galaxy%20Z%20Fold%201.png?alt=media&token=b2820d7b-ed16-4120-83e1-d52ee28ae23c",
-  },
+    {
+      poster:
+        "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FHey%20Jude%20%20%20adidas.png?alt=media&amp;token=43b3099c-0724-49bd-9769-b8881b9c8ecc",
+      videoSrc:
+        "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FHey%20Jude%20%20%20adidas.mp4?alt=media&token=831e2020-b7bd-49cd-b6fb-35bf91133bff",
+    },
   {
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/mobileVideo%2FZG%20-%20Galaxy%20Z%20Fold5%20l%20Z%20Flip5%20Official%20Introduction%20Film%20Samsung%20JP%20X600.mp4?alt=media&token=fed9fa82-28fa-45b6-9323",
@@ -135,13 +135,6 @@ row2: [
   }, 
 
 ]
-
-  // {
-  //   poster:
-  //     "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FHey%20Jude%20%20%20adidas.png?alt=media&amp;token=43b3099c-0724-49bd-9769-b8881b9c8ecc",
-  //   videoSrc:
-  //     "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FHey%20Jude%20%20%20adidas.mp4?alt=media&token=831e2020-b7bd-49cd-b6fb-35bf91133bff",
-  // },
   // {
   //   poster:
   //     "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20Control%20Your%20PC%20Settings%20with%20Copilot%20in%20Windows%2011.png?alt=media&token=b6a78d49-be55-442d-a5b3-56b6173c2baf",
