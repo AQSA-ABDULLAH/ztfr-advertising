@@ -5,6 +5,7 @@ import MarqueeRow from "./MarqueeRow";
 
 function AdvertisementCarousel() {
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [hoveredVideoIndex, setHoveredVideoIndex] = useState(null);
 
   return (
     <section className="w-full overflow-hidden py-4 space-y-4">
@@ -18,7 +19,9 @@ function AdvertisementCarousel() {
         <MarqueeRow
           key={index}
           direction={index % 2 === 0 ? "left" : "right"}
-          onVideoClick={(video) => setSelectedVideo(video)} // Pass video
+          onVideoClick={(video) => setSelectedVideo(video)}
+          hoveredVideoIndex={hoveredVideoIndex}
+          setHoveredVideoIndex={setHoveredVideoIndex}
         />
       ))}
     </section>
@@ -26,6 +29,8 @@ function AdvertisementCarousel() {
 }
 
 export default AdvertisementCarousel;
+
+
 
 
 
