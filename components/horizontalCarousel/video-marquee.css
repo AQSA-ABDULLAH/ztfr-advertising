@@ -1,4 +1,13 @@
-@keyframes marqueeLeft {
+/* styles/globals.css or any module */
+.rfm-marquee-container {
+  --pause-on-hover: paused;
+  --pause-on-click: paused;
+  --transform: none;
+}
+
+
+
+/* @keyframes marqueeLeft {
     0% {
       transform: translateX(0%);
     }
@@ -24,10 +33,9 @@
     animation: marqueeRight 80s linear infinite;
   }
   
-  /* New class to pause the marquee animation */
   .pause-marquee {
     animation-play-state: paused !important;
-  }
+  } */
   
 
 
