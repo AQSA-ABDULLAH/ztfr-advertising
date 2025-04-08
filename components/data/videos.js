@@ -89,6 +89,12 @@ const videos = [
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FRolex%20Yacht-Master%20%E2%80%93%20Marine%20character.mp4?alt=media&amp;token=6940cc21-64f3-4b7c-81e7-767f2d62ede6",
   },
+  {
+    poster:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FHey%20Jude%20%20%20adidas.png?alt=media&amp;token=43b3099c-0724-49bd-9769-b8881b9c8ecc",
+    videoSrc:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FHey%20Jude%20%20%20adidas.mp4?alt=media&token=831e2020-b7bd-49cd-b6fb-35bf91133bff",
+  },
 ];
 
 export default videos;
