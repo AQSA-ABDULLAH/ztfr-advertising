@@ -9,6 +9,10 @@
     animation-timing-function: linear;
     will-change: transform;
   }
+
+  .paused {
+    animation-play-state: paused !important;
+  }
   
   .scroll-up {
     animation-name: scroll-up;
@@ -35,10 +39,6 @@
       transform: translateY(0%);
     }
   }
-
-.paused {
-  animation-play-state: paused !important;
-}
 
 
 
