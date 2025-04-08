@@ -1,22 +1,25 @@
-"use client"; 
+"use client";
+
 import React, { useState, useEffect } from "react";
 import AdVideoModal from "./AdVideoModal";
 import MarqueeRow from "./MarqueeRow";
-import videos from "../data/videos"; // Assuming this is where your video data is stored
+import videoData from "../data/videos"; // assuming default export
 
 function AdvertisementCarousel() {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [hoveredVideoIndex, setHoveredVideoIndex] = useState(null);
 
-  // Preload all images and videos
+  const { row1, row2, row3 } = videoData;
+
+  // Preload all videos and posters
   useEffect(() => {
-    // Preloading video files
-    videos.forEach((video) => {
+    const allVideos = [...row1, ...row2, ...row3];
+
+    allVideos.forEach((video) => {
       const videoElement = document.createElement("video");
       videoElement.src = video.videoSrc;
       videoElement.load();
 
-      // Preload the poster images
       const img = new Image();
       img.src = video.poster;
     });
@@ -30,10 +33,13 @@ function AdvertisementCarousel() {
           onClose={() => setSelectedVideo(null)}
         />
       )}
-      {[...Array(3)].map((_, index) => (
+
+      {/* Pass row1, row2, row3 to MarqueeRow */}
+      {[row1, row2, row3].map((row, index) => (
         <MarqueeRow
-          key={index}
+          key={`row-${index}`}
           direction={index % 2 === 0 ? "left" : "right"}
+          rows={row} // Pass the row as 'rows'
           onVideoClick={(video) => setSelectedVideo(video)}
           hoveredVideoIndex={hoveredVideoIndex}
           setHoveredVideoIndex={setHoveredVideoIndex}

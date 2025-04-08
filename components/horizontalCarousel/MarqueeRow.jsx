@@ -1,26 +1,24 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
-import videos from "../data/videos";
 
 const MarqueeRow = ({
   direction = "left",
+  rows, // Use the rows prop here
   onVideoClick,
   hoveredVideoIndex,
   setHoveredVideoIndex,
 }) => {
   return (
     <Marquee speed={50} gradient={false} pauseOnHover direction={direction}>
-      {videos.map((video, index) => {
+      {rows.map((video, index) => { // Now map over rows
         const isHovered = hoveredVideoIndex === index;
         const isSomeHovered = hoveredVideoIndex !== null;
 
         return (
           <div
             key={index}
-            className={`relative mx-2 ${
-              isSomeHovered ? (isHovered ? "opacity-100" : "opacity-25") : "opacity-100"
-            } `}
+            className={`relative mx-2 ${isSomeHovered ? (isHovered ? "opacity-100" : "opacity-25") : "opacity-100"}`}
             onClick={() => onVideoClick(video)}
             onMouseEnter={() => setHoveredVideoIndex(index)}
             onMouseLeave={() => setHoveredVideoIndex(null)}
@@ -49,6 +47,3 @@ const MarqueeRow = ({
 };
 
 export default MarqueeRow;
-
-
-

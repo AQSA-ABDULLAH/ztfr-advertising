@@ -1,4 +1,5 @@
-const videos = [
+const videos = {
+  row1: [
   {
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/mobileVideo%2FZG%20-%20Galaxy%20Z%20Fold5%20l%20Z%20Flip5%20Official%20Introduction%20Film%20Samsung%20JP%20X600.mp4?alt=media&token=fed9fa82-28fa-45b6-9323",
@@ -41,6 +42,10 @@ const videos = [
     poster:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FKhud%20Ko%20Jaga%20Ft.%20Diljit%20Dosanjh%20X%20Coca-Cola.png?alt=media&token=c7a76ab9-873b-417b-9eb1-db1d37322246",
   },
+
+
+],
+row2: [
   {
     poster:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FIKEA%20Buyback%20%26%20Resell%20service.png?alt=media&token=b0ece681-0011-499a-a6fd-ca91994ae490",
@@ -64,13 +69,13 @@ const videos = [
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FWINNING%20ISN%E2%80%99T%20FOR%20EVERYONE%20%20%20REGRETS%20%20%20LEBRON.png?alt=media&token=f609b470-b304-49d6-b674-a0d34655eb21",
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FWINNING%20ISN%E2%80%99T%20FOR%20EVERYONE%20%20%20REGRETS%20%20%20LEBRON.mp4?alt=media&token=f26c6a61-cd7f-467d-9ea1-e25e49020e7d",
-  },
+  }, 
   {
     poster:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FRolex%20GMT-Master%20II%20%E2%80%93%20Keep%20track%20of%20ties.png?alt=media&token=da2e9333-5b83-4466-89ae-75155a9ac36d",
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FRolex%20GMT-Master%20II%20%E2%80%93%20Keep%20track%20of%20ties.mp4?alt=media&token=8128ec2f-86cf-45b3-995c-029fe830d702",
-  },
+  }, 
   {
     poster:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FAll%20the%20Best%20Moments%20are%20Better%20With%20Pepsi.png?alt=media&token=684813bb-bc61-4a77-8eb4-abc5e9ec97d3",
@@ -82,7 +87,10 @@ const videos = [
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FRolex%20Cosmograph%20Daytona%20%E2%80%93%20The%20triumph%20of%20endurance.png?alt=media&amp;token=8df56c4e-9489-4277-9e00-6d8b03567efa",
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FRolex%20Cosmograph%20Daytona%20%E2%80%93%20The%20triumph%20of%20endurance.mp4?alt=media&token=58159177-41fa-4aa8-887e-e3a6c809f092",
-  },
+  }, 
+],
+
+  row3: [
   {
     poster:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FNEOM.%20Sindalah%20-%20A%20year-round%20luxury%20destination.png?alt=media&amp;token=e969c752-2c88-4de2-a04d-8d640217b52a",
@@ -112,7 +120,7 @@ const videos = [
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FTiffany%20%26%20Co.%20Icons%20HardWear%20by%20Tiffany.png?alt=media&amp;token=6e5c1cb9-3828-44f1-886e-21bb15ffa51a",
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FTiffany%20%26%20Co.%20Icons%20HardWear%20by%20Tiffany.mp4?alt=media&amp;token=bab85a0a-af9e-42d9-871d-42102c86fe40",
-  },
+  }, 
   {
     poster:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FLa%20Nouvelle%20Vague%20Lacoste%20x%20Maison%20Ch%C3%A2teau%20Rouge.png?alt=media&amp;token=61713392-8eef-4e26-925e-6864bc8e6000",
@@ -124,19 +132,22 @@ const videos = [
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FRolex%20Yacht-Master%20%E2%80%93%20Marine%20character.png?alt=media&amp;token=b3d02436-6386-4d40-8cb9-3955a687dd2b",
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FRolex%20Yacht-Master%20%E2%80%93%20Marine%20character.mp4?alt=media&amp;token=6940cc21-64f3-4b7c-81e7-767f2d62ede6",
-  },
-  {
-    poster:
-      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FHey%20Jude%20%20%20adidas.png?alt=media&amp;token=43b3099c-0724-49bd-9769-b8881b9c8ecc",
-    videoSrc:
-      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FHey%20Jude%20%20%20adidas.mp4?alt=media&token=831e2020-b7bd-49cd-b6fb-35bf91133bff",
-  },
-  {
-    poster:
-      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20Control%20Your%20PC%20Settings%20with%20Copilot%20in%20Windows%2011.png?alt=media&token=b6a78d49-be55-442d-a5b3-56b6173c2baf",
-    videoSrc:
-      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FZG%20-%20Control%20Your%20PC%20Settings%20with%20Copilot%20in%20Windows%2011.mp4?alt=media&token=f9cef35d-07ac-40fe-a5b7-2fe100ca6b88",
-  },
-];
+  }, 
+
+]
+
+  // {
+  //   poster:
+  //     "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FHey%20Jude%20%20%20adidas.png?alt=media&amp;token=43b3099c-0724-49bd-9769-b8881b9c8ecc",
+  //   videoSrc:
+  //     "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FHey%20Jude%20%20%20adidas.mp4?alt=media&token=831e2020-b7bd-49cd-b6fb-35bf91133bff",
+  // },
+  // {
+  //   poster:
+  //     "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20Control%20Your%20PC%20Settings%20with%20Copilot%20in%20Windows%2011.png?alt=media&token=b6a78d49-be55-442d-a5b3-56b6173c2baf",
+  //   videoSrc:
+  //     "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FZG%20-%20Control%20Your%20PC%20Settings%20with%20Copilot%20in%20Windows%2011.mp4?alt=media&token=f9cef35d-07ac-40fe-a5b7-2fe100ca6b88",
+  // },
+}
 
 export default videos;
