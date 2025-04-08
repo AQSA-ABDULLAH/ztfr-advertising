@@ -1,9 +1,45 @@
 const videos = [
   {
+    videoSrc:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/mobileVideo%2FZG%20-%20Galaxy%20Z%20Fold5%20l%20Z%20Flip5%20Official%20Introduction%20Film%20Samsung%20JP%20X600.mp4?alt=media&token=fed9fa82-28fa-45b6-9323",
+    poster:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FSamsung%20Galaxy%20Z%20Fold%201.png?alt=media&token=b2820d7b-ed16-4120-83e1-d52ee28ae23c",
+  },
+  {
+    videoSrc:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/mobileVideo%2FZG%20-%20Galaxy%20Z%20Fold5%20l%20Z%20Flip5%20Official%20Introduction%20Film%20Samsung%20JP%20X600.mp4?alt=media&token=fed9fa82-28fa-45b6-9323",
+    poster:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20ASUS%20Zenbook%2014%20OLED%20(UM3406)%20%23AMD%20_%202024.png?alt=media&token=898f064c-17eb-4ef0-9a35-efe89dbf4f48",
+  },
+  {
+    videoSrc:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/mobileVideo%2FZG%20-%20Galaxy%20Z%20Fold5%20l%20Z%20Flip5%20Official%20Introduction%20Film%20Samsung%20JP%20X600.mp4?alt=media&token=fed9fa82-28fa-45b6-9323",
+    poster:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FPaper%20Football%20With%20Patrick%20Mahomes%20%20%20adidas.png?alt=media&token=c3315a52-1169-4a14-9b72-0c3fea8f0655",
+  },
+  {
+    poster:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FWu-Tang.%20Tiger%20Style.%20Nike.png?alt=media&token=014dec9d-1f43-450c-abf0-708c04f02ad6",
+    videoSrc:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/mobileVideo%2FZG%20-%20Galaxy%20Z%20Fold5%20l%20Z%20Flip5%20Official%20Introduction%20Film%20Samsung%20JP%20X600.mp4?alt=media&token=fed9fa82-28fa-45b6-9323",
+  },
+  {
+    poster:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FSuperflat%20First%20Love%20Film%20(2009)%20-%20Remastered%20%20%C2%A0Louis%20Vuitton%20x%20Murakami.%20LOUIS%20VUITTON.png?alt=media",
+    videoSrc:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/mobileVideo%2FZG%20-%20Galaxy%20Z%20Fold5%20l%20Z%20Flip5%20Official%20Introduction%20Film%20Samsung%20JP%20X600.mp4?alt=media&token=fed9fa82-28fa-45b6-9323",
+  },
+  {
     poster:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FTHE%20PUMA%20FUTURE%208%20LAUNCH%20EDITION.png?alt=media&token=2d39300e-7098-48f8-878e-3f2d063c59d6",
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FTHE%20PUMA%20FUTURE%208%20LAUNCH%20EDITION.mp4?alt=media&token=abc4d919-4ebb-44bf-a969-4af2fca5f3f2",
+  },
+  {
+    videoSrc:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/mobileVideo%2FZG%20-%20Galaxy%20Z%20Fold5%20l%20Z%20Flip5%20Official%20Introduction%20Film%20Samsung%20JP%20X600.mp4?alt=media&token=fed9fa82-28fa-45b6-9323",
+    poster:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FKhud%20Ko%20Jaga%20Ft.%20Diljit%20Dosanjh%20X%20Coca-Cola.png?alt=media&token=c7a76ab9-873b-417b-9eb1-db1d37322246",
   },
   {
     poster:
@@ -94,6 +130,12 @@ const videos = [
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FHey%20Jude%20%20%20adidas.png?alt=media&amp;token=43b3099c-0724-49bd-9769-b8881b9c8ecc",
     videoSrc:
       "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FHey%20Jude%20%20%20adidas.mp4?alt=media&token=831e2020-b7bd-49cd-b6fb-35bf91133bff",
+  },
+  {
+    poster:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/thumbnailVideo%2FZG%20-%20Control%20Your%20PC%20Settings%20with%20Copilot%20in%20Windows%2011.png?alt=media&token=b6a78d49-be55-442d-a5b3-56b6173c2baf",
+    videoSrc:
+      "https://firebasestorage.googleapis.com/v0/b/ztfr-ff6ab.appspot.com/o/advertVideos%2FZG%20-%20Control%20Your%20PC%20Settings%20with%20Copilot%20in%20Windows%2011.mp4?alt=media&token=f9cef35d-07ac-40fe-a5b7-2fe100ca6b88",
   },
 ];
 
