@@ -9,27 +9,33 @@ const BrandScroller = ({
   animationClass,
   hoveredImage,
   setHoveredImage,
+  direction = "vertical", // "vertical" by default
 }) => {
   const imageRefs = useRef([]);
-
-  const [pauseImage, setPauseImage] = useState(false); // default should be false
+  const [pauseImage, setPauseImage] = useState(false);
 
   const handleImageMouseEnter = (idx) => {
     setHoveredImage(imageRefs.current[idx]);
-    setPauseImage(true); // ✅ typo fixed
+    setPauseImage(true);
   };
 
   const handleImageMouseLeave = () => {
     setHoveredImage(null);
-    setPauseImage(false); // ✅ typo fixed
+    setPauseImage(false);
   };
 
   return (
-    <div className="relative overflow-hidden h-[100vh] w-[150px] 2xl:w-[200px]">
+    <div
+      className={`relative overflow-hidden ${
+        direction === "vertical"
+          ? "h-[100vh] w-[150px] 2xl:w-[200px]"
+          : "w-full h-[150px]"
+      }`}
+    >
       <div
         className={`scroll-track ${animationClass} ${
           pauseImage ? "paused" : ""
-        }`}
+        } ${direction === "horizontal" ? "flex-row" : "flex-col"}`}
       >
         {[...brands, ...brands].map((brand, idx) => (
           <div
@@ -42,7 +48,13 @@ const BrandScroller = ({
               ref={(el) => (imageRefs.current[idx] = el)}
               src={brand.src}
               alt={`brand-${idx}`}
-              className={`image-item rounded-[12px] my-[20px] cursor-pointer transition-all duration-300 ${
+              className={`image-item ${
+                direction === "vertical" ? "my-[20px]" : "mx-[20px]" 
+              } rounded-[12px]
+               ${
+                direction === "vertical" ? "h-full w-full" : "h-[150px] w-[150px]"
+              }
+                 cursor-pointer transition-all duration-300 ${
                 hoveredImage && hoveredImage !== imageRefs.current[idx]
                   ? "opacity-25"
                   : "opacity-100"
@@ -97,30 +109,34 @@ const VerticalCarousel = () => {
           setHoveredImage={setHoveredImage}
         />
       </div>
-      <div className="flex gap-[16px] justify-around w-[50%]">
+      <div className="flex flex-col gap-[16px] justify-around w-[50%]">
         <BrandScroller
           brands={brandsColumn5}
-          // animationClass="scroll-up"
           hoveredImage={hoveredImage}
           setHoveredImage={setHoveredImage}
+          direction="horizontal"
+          animationClass="scroll-left"
         />
         <BrandScroller
           brands={brandsColumn6}
-          // animationClass="scroll-down"
           hoveredImage={hoveredImage}
           setHoveredImage={setHoveredImage}
+          direction="horizontal"
+          animationClass="scroll-right"
         />
         <BrandScroller
           brands={brandsColumn7}
-          // animationClass="scroll-up"
           hoveredImage={hoveredImage}
           setHoveredImage={setHoveredImage}
+          direction="horizontal"
+          animationClass="scroll-left"
         />
         <BrandScroller
           brands={brandsColumn8}
-          // animationClass="scroll-down"
           hoveredImage={hoveredImage}
           setHoveredImage={setHoveredImage}
+          direction="horizontal"
+          animationClass="scroll-right"
         />
       </div>
     </div>
