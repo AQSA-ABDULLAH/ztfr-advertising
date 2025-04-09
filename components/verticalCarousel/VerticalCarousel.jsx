@@ -33,7 +33,7 @@ const BrandScroller = ({ brands, animationClass, hoveredImage, setHoveredImage }
               ref={(el) => (imageRefs.current[idx] = el)}
               src={brand.src}
               alt={`brand-${idx}`}
-              className={`image-item rounded-[12px] my-[12px] cursor-pointer transition-all duration-300 ${
+              className={`image-item rounded-[12px] my-[20px] cursor-pointer transition-all duration-300 ${
                 hoveredImage && hoveredImage !== imageRefs.current[idx] ? "opacity-25" : "opacity-100"
               }`}
             />
