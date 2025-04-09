@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import "./scroll.css";
-import data from "../data/brandColumns.json";
+import data from "../data/horizontal-carousel.json";
 
 const BrandScroller = ({
   brands,
