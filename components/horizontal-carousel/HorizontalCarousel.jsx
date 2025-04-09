@@ -10,7 +10,7 @@ function HorizontalCarousel() {
   const rows = [imageData.row1, imageData.row2, imageData.row3, imageData.row4, imageData.row5, imageData.row6, imageData.row7, imageData.row8];
 
   return (
-    <section className="w-full overflow-hidden py-4 flex flex-col gap-[26px]">
+    <section className="w-full overflow-hidden py-4 flex flex-col gap-4">
       {rows.map((row, index) => (
         <MarqueeRow
           key={`row-${index}`}

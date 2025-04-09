@@ -21,7 +21,7 @@ const MarqueeRow = ({
         return (
           <div
             key={index}
-            className={`relative mx-[10px] ${opacity} transition-opacity duration-300`}
+            className={`relative mx-2 ${opacity} transition-opacity duration-300`}
             onMouseEnter={() => setHoveredImage(img)}
             onMouseLeave={() => setHoveredImage(null)}
           >
