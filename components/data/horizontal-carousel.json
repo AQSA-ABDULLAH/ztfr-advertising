@@ -1,5 +1,5 @@
 {
-    "brandsColumn1": [
+    "row1": [
       { "src": "/assets/images/1.1.png" },
       { "src": "/assets/images/1.2.png" },
       { "src": "/assets/images/1.3.png" },
@@ -13,7 +13,7 @@
       { "src": "/assets/images/1.5.png" },
       { "src": "/assets/images/1.6.png" }
     ],
-    "brandsColumn2": [
+    "row2": [
       { "src": "/assets/images/2.1.png" },
       { "src": "/assets/images/2.2.png" },
       { "src": "/assets/images/2.3.png" },
@@ -27,7 +27,7 @@
       { "src": "/assets/images/2.5.png" },
       { "src": "/assets/images/2.6.png" }
     ],
-    "brandsColumn3": [
+    "row3": [
       { "src": "/assets/images/3.1.png" },
       { "src": "/assets/images/3.2.png" },
       { "src": "/assets/images/3.3.png" },
@@ -41,7 +41,7 @@
       { "src": "/assets/images/3.5.png" },
       { "src": "/assets/images/3.6.png" }
     ],
-    "brandsColumn4": [
+    "row4": [
       { "src": "/assets/images/4.1.png" },
       { "src": "/assets/images/4.2.png" },
       { "src": "/assets/images/4.3.png" },
@@ -55,7 +55,7 @@
       { "src": "/assets/images/4.5.png" },
       { "src": "/assets/images/4.6.png" }
     ],
-    "brandsColumn5": [
+    "row5": [
       { "src": "/assets/images/5.1.png" },
       { "src": "/assets/images/5.2.png" },
       { "src": "/assets/images/5.3.png" },
@@ -69,7 +69,7 @@
       { "src": "/assets/images/5.5.png" },
       { "src": "/assets/images/5.6.png" }
     ],
-    "brandsColumn6": [
+    "row6": [
       { "src": "/assets/images/6.1.png" },
       { "src": "/assets/images/6.2.png" },
       { "src": "/assets/images/6.3.png" },
@@ -83,7 +83,7 @@
       { "src": "/assets/images/6.5.png" },
       { "src": "/assets/images/6.6.png" }
     ],
-    "brandsColumn7": [
+    "row7": [
       { "src": "/assets/images/7.1.png" },
       { "src": "/assets/images/7.2.png" },
       { "src": "/assets/images/7.3.png" },
@@ -97,7 +97,7 @@
       { "src": "/assets/images/7.5.png" },
       { "src": "/assets/images/7.6.png" }
     ],
-    "brandsColumn8": [
+    "row8": [
       { "src": "/assets/images/8.1.png" },
       { "src": "/assets/images/8.2.png" },
       { "src": "/assets/images/8.3.png" },
