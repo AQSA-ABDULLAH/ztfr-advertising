@@ -69,3 +69,9 @@
     transform: translateX(0%);
   }
 }
+
+.image-item {
+  max-width: none !important;
+  height: auto;
+}
+

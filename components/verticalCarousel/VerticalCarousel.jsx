@@ -35,7 +35,9 @@ const BrandScroller = ({
       <div
         className={`scroll-track ${animationClass} ${
           pauseImage ? "paused" : ""
-        } ${direction === "horizontal" ? "flex-row" : "flex-col"}`}
+        } flex ${
+          direction === "horizontal" ? "flex-row gap-x-[16px]" : "flex-col"
+        }`}
       >
         {[...brands, ...brands].map((brand, idx) => (
           <div
@@ -48,17 +50,17 @@ const BrandScroller = ({
               ref={(el) => (imageRefs.current[idx] = el)}
               src={brand.src}
               alt={`brand-${idx}`}
-              className={`image-item ${
-                direction === "vertical" ? "my-[20px]" : "mx-[20px]" 
-              } rounded-[12px]
-               ${
-                direction === "vertical" ? "h-full w-full" : "h-[150px] w-[150px]"
+              className={`image-item rounded-[12px] cursor-pointer transition-all duration-300
+              ${
+                direction === "horizontal"
+                ? "w-[150px] h-[150px]"
+                : "w-full h-full my-[20px]"
               }
-                 cursor-pointer transition-all duration-300 ${
+              ${
                 hoveredImage && hoveredImage !== imageRefs.current[idx]
-                  ? "opacity-25"
-                  : "opacity-100"
-              }`}
+                ? "opacity-25"
+                : "opacity-100"
+              } `}
             />
           </div>
         ))}
