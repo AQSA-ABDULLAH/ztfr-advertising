@@ -1,4 +1,4 @@
-import VerticalCarousel from '@/components/verticalCarousel/VerticalCarousel';
+import VerticalCarousel from '@/components/vertical-carousel/VerticalCarousel';
 import React from 'react';
 
 function page() {
