@@ -1,15 +1,13 @@
 .scroll-track {
     position: absolute;
-    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     animation-duration: 15000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     will-change: transform;
   }
-
+  
   .paused {
     animation-play-state: paused !important;
   }
@@ -38,4 +36,41 @@
     100% {
       transform: translateY(0%);
     }
+  }
+  
+  .scroll-track.flex-row {
+    flex-direction: row;
+  }
+  
+  .scroll-track.flex-col {
+    flex-direction: column;
+  }
+  
+  .scroll-left {
+    animation-name: scroll-left;
+  }
+  .scroll-right {
+    animation-name: scroll-right;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .image-item {
+    max-width: none !important;
+    height: auto; /* Or fixed height depending on your need */
   }
