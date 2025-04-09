@@ -29,14 +29,14 @@ const BrandScroller = ({
       className={`relative overflow-hidden ${
         direction === "vertical"
           ? "h-[100vh] w-[150px] 2xl:w-[200px]"
-          : "w-full h-[150px]"
+          : "w-full h-[150px] 2xl:h-[200px]"
       }`}
     >
       <div
         className={`scroll-track ${animationClass} ${
           pauseImage ? "paused" : ""
         } flex ${
-          direction === "horizontal" ? "flex-row gap-x-[16px]" : "flex-col"
+          direction === "horizontal" ? "flex-row " : "flex-col"
         }`}
       >
         {[...brands, ...brands].map((brand, idx) => (
@@ -53,7 +53,7 @@ const BrandScroller = ({
               className={`image-item rounded-[12px] cursor-pointer transition-all duration-300
               ${
                 direction === "horizontal"
-                ? "w-[150px] h-[150px]"
+                ? "w-[150px] h-[150px] 2xl:h-[200px] 2xl:w-[200px] mx-[20px]"
                 : "w-full h-full my-[20px]"
               }
               ${
