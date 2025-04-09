@@ -1,48 +1,44 @@
 .scroll-track {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    animation-duration: 15000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    will-change: transform;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: max-content; /* ensures it grows based on children */
+  animation-duration: 5500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  will-change: transform;
+}
+
+.paused {
+  animation-play-state: paused !important;
+}
+
+.scroll-left {
+  animation-name: scroll-left;
+}
+
+.scroll-right {
+  animation-name: scroll-right;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
   }
-  
-  
-  
-  .paused {
-    animation-play-state: paused !important;
+  100% {
+    transform: translateX(-20%);
   }
-  
-  .scroll-left {
-    animation-name: scroll-left;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-20%);
   }
-  
-  .scroll-right {
-    animation-name: scroll-right;
+  100% {
+    transform: translateX(0);
   }
-  
-  @keyframes scroll-left {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  
-  @keyframes scroll-right {
-    0% {
-      transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-  
-  .image-item {
-    max-width: none !important;
- 
-  }
+}
+
+.image-item {
+  max-width: none !important;
+}
