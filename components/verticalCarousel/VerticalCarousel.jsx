@@ -53,7 +53,7 @@ const BrandScroller = ({
               className={`image-item rounded-[12px] cursor-pointer transition-all duration-300
               ${
                 direction === "horizontal"
-                ? "w-[150px] h-[150px] 2xl:h-[200px] 2xl:w-[200px] mx-[20px]"
+                ? "w-ful 2xl:h-full mx-[20px]"
                 : "w-full h-full my-[20px]"
               }
               ${
