@@ -42,7 +42,7 @@ const BrandScroller = ({
               ref={(el) => (imageRefs.current[idx] = el)}
               src={brand.src}
               alt={`brand-${idx}`}
-              className={`image-item rounded-[12px] mx-[20px] cursor-pointer transition-all duration-300
+              className={`image-item rounded-[12px] mx-[8px] cursor-pointer transition-all duration-300
     w-[150px] h-[150px] 2xl:w-[200px] 2xl:h-[200px]
     ${
       hoveredImage && hoveredImage !== imageRefs.current[idx]
@@ -72,7 +72,7 @@ const HorizontalCarousel = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
 
   return (
-    <div className="flex flex-col gap-[40px] 2xl:gap-[54px] justify-around group overflow-x-hidden">
+    <div className="flex flex-col gap-[16px] justify-around group overflow-x-hidden">
 
       <BrandScroller
         brands={brandsColumn1}

@@ -3,7 +3,7 @@ import React from 'react';
 
 function page() {
   return (
-    <div className='py-[40px] 2xl:py-[70px]'>
+    <div className='py-[20px] 2xl:py-[8px]'>
     <HorizontalCarousel />
     </div>
   )
