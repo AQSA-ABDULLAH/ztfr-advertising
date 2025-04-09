@@ -35,7 +35,7 @@ html, body {
 
 /* Add this in globals.css or a module stylesheet */
 ::-webkit-scrollbar {
-  height: 6px;  /* for horizontal scroll */
+  height: 4px;  /* for horizontal scroll */
   width: 6px;   /* for vertical scroll */
 }
 
